@@ -1,0 +1,150 @@
+body{
+	display: grid;
+	font-family: Calibri;
+	background-image: url("https://jooinn.com/images/silver-macbook-beside-white-ceramic-mug-on-table.jpg");
+	justify-content: center;
+
+}
+header {
+	background-image: linear-gradient(lightgrey, black);
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width:auto;
+	height: 25px;
+	z-index: 1;
+	padding:10px;
+	display: flex;
+	box-shadow: 0px 2px 4px black;
+}
+h1{
+	text-align: left;
+	position: relative;
+	bottom: 25px;
+	color: white;
+	font-size: 20pt;
+	margin-left: 10px;
+}
+
+#inputSection {
+	display: flex;
+	justify-content: center;
+	padding-top:50px;
+
+}
+
+#userInput {
+	margin: 0px 10px;
+	border-radius: 3px;
+	border-style: inset;
+	border-width: 1px;
+	border-color: grey;
+	padding-left: 3px;
+}
+
+#inProgressContainer {
+	background-color: rgba(250,200,70,1);
+	width: auto;
+	height: auto;
+	margin:20px;
+	border-radius: 6px;
+	box-shadow: 0px 0px 12px black;
+	text-align:center;
+
+}
+
+h3 {
+	text-align: center;
+	position: relative;
+	bottom: 15px;
+	font-size: 12pt;
+	color: grey;
+	margin-bottom: -10px;
+
+}
+#taskAndComplete {
+	display:flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.taskMain {
+	min-width: 200px;
+	min-height: 400px;
+	background-color: rgba(150,150,255, .9);
+	margin:20px;
+	border-radius: 6px;
+	box-shadow: 0px 0px 12px black;
+
+
+}
+.completedMain {
+	min-width: 200px;
+	min-height: 400px;
+	background-color: rgba(100,255,105, .9);
+	margin:20px;
+	border-radius: 6px;
+	box-shadow: 0px 0px 12px black;
+
+}
+.taskSub {
+	margin:10px;
+	padding: 15px;
+	border-radius: 6px;
+	width: auto;
+	height: auto;
+    background-image: linear-gradient(white, lightgrey);
+    box-shadow: 0px 2px 2px black;
+    font-size: 1.3em;
+
+}
+
+.finishButtons {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.completeButton ,.deleteButton , .inProgressButton {
+ margin-top: -10px;
+ margin:5px;
+ box-shadow: 0px 2px 2px grey;
+ border-radius: 4px;
+ width:auto;
+ height: 30px;
+ border-style: none;
+ text-shadow: 0px .5px 2px black;
+ color: white;
+ transition: all .7s;
+}
+
+#addTaskButton {
+ box-shadow: 0px 2px 3px black;
+ border-radius: 4px;
+ width:auto;
+ height: 30px;
+ border-style: solid;
+ text-shadow: 0px .5px 2px black;
+ color: white;
+ background-color: grey;
+ transition: all .7s;
+}
+
+.inProgressButton{
+	background-color: orange;
+}
+.completeButton {
+ 	background-color:green;
+}
+.deleteButton{
+	background-color: red;
+}
+
+.fa {
+	color: white;
+}
+button:hover {
+	background-color:rgb(60,60,255);
+	transform: scale(1.1); 
+}
+
